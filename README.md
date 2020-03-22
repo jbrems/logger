@@ -25,7 +25,8 @@ A simple Winston logger instance for personal use.
 ### 🎀 eslint
 This project relies on `eslint` to enforce code quality. It is advised to set up a
 file watcher to fix eslint errors on save.
-![](https://miro.medium.com/max/1868/1*wJ-djWO2YWeheAxT1QHjvg.png)
+
+[Read more here](https://github.com/jbrems/docs/blob/master/project-setup.md#-eslint)
 
 ### 🏗 Build
 To compile the Typescript code to Javascript run the `yarn build` command.
@@ -37,6 +38,8 @@ This command will compile all `.ts` files in the `src` folder to `.js` files in 
 To publish this package to NPM run `yarn publish`.  
 
 > This command will run the build command before publishing.
+
+> I you are not logged in to npm use `npm login`.
 
 ### 🃏 Test
 To run the Jest unit tests for this project run `yarn test`.

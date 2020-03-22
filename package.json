@@ -1,6 +1,6 @@
 {
   "name": "@jbrems/logger",
-  "version": "1.0.0",
+  "version": "1.0.0-1",
   "description": "A simple Winston logger instance for personal use.",
   "main": "dist/index.js",
   "files": [
@@ -13,8 +13,8 @@
   "author": "Jonas Brems",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/jbrems/logger.git"
+    "type": "git",
+    "url": "https://github.com/jbrems/logger.git"
   },
   "scripts": {
     "start": "yarn build && node dist/index.js",
