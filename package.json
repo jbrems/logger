@@ -1,6 +1,6 @@
 {
   "name": "@jbrems/logger",
-  "version": "1.0.0-1",
+  "version": "1.0.0",
   "description": "A simple Winston logger instance for personal use.",
   "main": "dist/index.js",
   "files": [
