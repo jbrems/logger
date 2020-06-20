@@ -2,7 +2,7 @@ import { logger, getLogger } from './logger';
 
 describe('Logger', () => {
   beforeEach(() => {
-    spyOn(process.stdout, 'write');
+    spyOn(process.stdout, 'write').and.callThrough();
   });
 
   it('should log statements to the console', () => {
@@ -12,7 +12,7 @@ describe('Logger', () => {
     expect(process.stdout.write).toHaveBeenCalledWith(expect.stringContaining('This is a warning!'));
     logger.info('This is an info message.');
     expect(process.stdout.write).toHaveBeenCalledWith(expect.stringContaining('This is an info message'));
-    logger.info('Some debugging is going on here');
+    logger.debug('Some debugging is going on here');
     expect(process.stdout.write).toHaveBeenCalledWith(expect.stringContaining('Some debugging is going on here'));
     logger.silly({ key: 'value', otherKey: 'other value' });
     expect(process.stdout.write).toHaveBeenCalledWith(expect.stringContaining('{ key: \'value\', otherKey: \'other value\' }'));
@@ -26,8 +26,8 @@ describe('Logger', () => {
 
   describe('const logger', () => {
     it('should return a logger without a label', () => {
-      logger.debug('I should have a default label');
-      expect(process.stdout.write).toHaveBeenCalledWith(expect.stringContaining('[<No label provided>]'));
+      logger.debug('I should not have a label');
+      expect(process.stdout.write).toHaveBeenCalledWith(expect.not.stringMatching(/\[.+\]/));
     });
   });
 

@@ -5,7 +5,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
-    "strict": true
+    "strict": true,
+    "declaration": true
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts"]
 }
