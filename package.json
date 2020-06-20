@@ -19,8 +19,7 @@
     "start": "yarn build && node dist/index.js",
     "build": "eslint src/**/*.ts && tsc",
     "test": "jest --coverage --verbose",
-    "prepublishOnly": "yarn test && yarn build",
-    "postpublish": "git push && git push --tags"
+    "prepublishOnly": "yarn test && yarn build"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",
