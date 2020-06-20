@@ -11,14 +11,14 @@ A simple Winston logger instance for personal use. Writes logs to the console.
    import { logger } from '@jbrems/logger';
    logger.info('My first info message');
    ```
-   will produce `YYYY-MM-DD HH:mm:ss.SSS +ms info My first info message`  
+   will produce `YYYY-MM-DD HH:mm:ss.SSS +ms   info My first info message`  
    or provide a label for your logger
    ```javascript
    import { getLogger } from '@jbrems/logger';
    const logger = getLogger('Bookservice 📚');
    logger.debug('Fetching books from series Harry Potter...');
    ```
-   will produce `YYYY-MM-DD HH:mm:ss.SSS +ms [Bookservice 📚] debug Fetching books from series Harry Potter...`
+   will produce `YYYY-MM-DD HH:mm:ss.SSS +ms   [Bookservice 📚] debug Fetching books from series Harry Potter...`
 
 ## 🎁 Contribute
 

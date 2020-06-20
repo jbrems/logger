@@ -14,7 +14,7 @@ export function getLogger(label?: string) {
       format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss.SSS' }),
       format.label({ label, message: false }),
       format.ms(),
-      format.printf((info) => `${info.timestamp} ${info.ms} ${info.label ? `[${info.label}] ` : ''}${info.level}: ${info.stack ? info.stack : info.message}`),
+      format.printf((info) => `${info.timestamp} ${info.ms} \t${info.label ? `[${info.label}] ` : ''}${info.level}: ${info.stack ? info.stack : info.message}`),
     ),
   });
 }
