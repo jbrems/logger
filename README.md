@@ -25,7 +25,7 @@ A simple Winston logger instance for personal use. Writes logs to the console.
 ### 🎀 eslint
 This project relies on `eslint` to enforce code quality. It is advised to enable
 `Run eslint --fix on save` in `Settings > Language & Frameworks > Javascript > 
-Code Quqlity Tools > ESLint`.
+Code Quality Tools > ESLint`.
 
 [Read more here](https://github.com/jbrems/docs/blob/master/project-setup.md#-eslint)
 
